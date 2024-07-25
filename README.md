@@ -1,6 +1,6 @@
 # ReDimNet
 
-This is oficial implementation for neural network architecture presented in paper [Reshape Dimensions Network for Speaker Recognition]().
+This is official implementation for neural network architecture presented in paper [Reshape Dimensions Network for Speaker Recognition]().
 
 <p align="center">
 	<img src="comparison_plot.png" alt="Sample"  width="1000">
