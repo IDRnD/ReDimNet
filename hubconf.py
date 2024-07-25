@@ -25,7 +25,7 @@ def load_custom(size, pretrained=False, finetuned=True):
 def b0(pretrained=False, finetuned=True):
     return load_custom('b0', pretrained=pretrained, finetuned=finetuned)
 
-def b0(pretrained=False, finetuned=True):
+def b1(pretrained=False, finetuned=True):
     return load_custom('b1', pretrained=pretrained, finetuned=finetuned)
 
 def b2(pretrained=False, finetuned=True):
