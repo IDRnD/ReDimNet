@@ -57,6 +57,7 @@ We introduce Reshape Dimensions Network (ReDimNet), a novel neural network archi
 | **ReDimNet-B6** | **15.0M** | **20.27** | ✓ | ✗ | 0.40 | 0.55 | 1.05 |
 | **ReDimNet-B6** + AS-Norm | | | ✓ | ✓ | **0.37** | **0.53** | **1.00** |
 
+\* - means values have been estimated.
 
 ## Usage
 
