@@ -120,10 +120,6 @@ class MelBanks(nn.Module):
                     x = self.specaug(x)
         return x
 
-#-------------------------------------------------------------
-# Copy multi-head attention module from hugginface wav2vec2
-#-------------------------------------------------------------
-
 class LayerNorm(nn.Module): # ⚡
     """ LayerNorm that supports two data formats: channels_last (default) or channels_first. 
     The ordering of the dimensions in the inputs. channels_last corresponds to inputs with 
@@ -602,12 +598,6 @@ class TimeContextBlock1d(nn.Module):
                 nn.GELU(),
                 nn.Conv1d(hC*2,hC,1)
             )
-        elif block_type == 'tdnn':
-            # Small ECAPA-TDNN based block
-            self.tcm = ECAPA_TDNN(
-                            in_channels=hC, out_channels=hC,
-                            scale=8, blocks_setup=[(3,2), (3,3)])
-            
         elif block_type == 'gru':
             # Just GRU
             self.tcm = nn.Sequential(
