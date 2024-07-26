@@ -832,7 +832,7 @@ class ReDimNet(nn.Module):
         return x
 
 #------------------------------------------
-#             Poolong layers:
+#             Pooling layers:
 #------------------------------------------
 
 class ASTP(nn.Module):
