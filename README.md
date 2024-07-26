@@ -1,11 +1,11 @@
 # ReDimNet
 
-This is official implementation for neural network architecture presented in paper [Reshape Dimensions Network for Speaker Recognition]().
+This is an official implementation of a neural network architecture presented in the paper [Reshape Dimensions Network for Speaker Recognition](https://arxiv.org/pdf/2407.18223).
 
 <p align="center">
-	<img src="comparison_plot.png" alt="Sample"  width="1000">
+	<img src="src/comparison_plot.png" alt="Sample"  width="1000">
 	<p align="center">
-		<em>ReDimNet comparison plot</em>
+		<em>Speaker Recognition NN architectures comparison (2024)</em>
 	</p>
 </p>
 
@@ -17,7 +17,7 @@ This is official implementation for neural network architecture presented in pap
 We introduce Reshape Dimensions Network (ReDimNet), a novel neural network architecture for spectrogram (audio) processing, specifically for extracting utterance-level speaker representations. ReDimNet reshapes dimensionality between 2D feature maps and 1D signal representations, enabling the integration of 1D and 2D blocks within a single model. This architecture maintains the volume of channel-timestep-frequency outputs across both 1D and 2D blocks, ensuring efficient aggregation of residual feature maps. ReDimNet scales across various model sizes, from 1 to 15 million parameters and 0.5 to 20 GMACs. Our experiments show that ReDimNet achieves state-of-the-art performance in speaker recognition while reducing computational complexity and model size compared to existing systems. 
 
 <p align="center">
-	<img src="redimnet_scheme.png" alt="Sample"  width="1000">
+	<img src="src/redimnet_scheme.png" alt="Sample"  width="1000">
 	<p align="center">
 		<em>ReDimNet architecture</em>
 	</p>
@@ -71,14 +71,22 @@ import torch
 model = torch.hub.load('IDRnD/ReDimNet', 'b0', pretrained=True, finetuned=False)
 
 # To load pretrained on vox2 model with Large-Margin finetuning:
-model = torch.hub.load('IDRnD/ReDimNet', 'b0', pretrained=False, finetuned=True)
+model = torch.hub.load('IDRnD/ReDimNet', 'b0', pretrained=True, finetuned=True)
 ```
 
 ## Citation
 
-If you find this work or code is helpful in your research, please cite:
+If you find this work or code is helpful in your research, please cite (will be updated after Interspeech 2024 publication):
 ```
-THERE WILL BE CITATION
+@misc{yakovlev2024reshapedimensionsnetworkspeaker,
+      title={Reshape Dimensions Network for Speaker Recognition}, 
+      author={Ivan Yakovlev and Rostislav Makarov and Andrei Balykin and Pavel Malov and Anton Okhotnikov and Nikita Torgashov},
+      year={2024},
+      eprint={2407.18223},
+      archivePrefix={arXiv},
+      primaryClass={eess.AS},
+      url={https://arxiv.org/abs/2407.18223}, 
+}
 ```
 
 ## Acknowledgements
