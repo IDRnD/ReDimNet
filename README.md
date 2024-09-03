@@ -78,14 +78,13 @@ model = torch.hub.load('IDRnD/ReDimNet', 'b0', pretrained=True, finetuned=True)
 
 If you find this work or code is helpful in your research, please cite (will be updated after Interspeech 2024 publication):
 ```
-@misc{yakovlev2024reshapedimensionsnetworkspeaker,
-      title={Reshape Dimensions Network for Speaker Recognition}, 
-      author={Ivan Yakovlev and Rostislav Makarov and Andrei Balykin and Pavel Malov and Anton Okhotnikov and Nikita Torgashov},
-      year={2024},
-      eprint={2407.18223},
-      archivePrefix={arXiv},
-      primaryClass={eess.AS},
-      url={https://arxiv.org/abs/2407.18223}, 
+@inproceedings{yakovlev24_interspeech,
+  title     = {Reshape Dimensions Network for Speaker Recognition},
+  author    = {Ivan Yakovlev and Rostislav Makarov and Andrei Balykin and Pavel Malov and Anton Okhotnikov and Nikita Torgashov},
+  year      = {2024},
+  booktitle = {Interspeech 2024},
+  pages     = {3235--3239},
+  doi       = {10.21437/Interspeech.2024-2116},
 }
 ```
 
