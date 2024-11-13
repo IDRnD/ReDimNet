@@ -33,10 +33,10 @@ PyTorch>=2.0
 import torch
 
 # To load pretrained on vox2 model without Large-Margin finetuning
-model = torch.hub.load('IDRnD/ReDimNet', 'redimnet', model_name='b2', train_type='ptn', dataset='vox2')
+model = torch.hub.load('IDRnD/ReDimNet', 'ReDimNet', model_name='b2', train_type='ptn', dataset='vox2')
 
 # To load pretrained on vox2 model with Large-Margin finetuning:
-model = torch.hub.load('IDRnD/ReDimNet', 'redimnet', model_name='b2', train_type='ft_lm', dataset='vox2')
+model = torch.hub.load('IDRnD/ReDimNet', 'ReDimNet', model_name='b2', train_type='ft_lm', dataset='vox2')
 ```
 For full list of pretrained models, please refer to [evaluation](EVALUATION.md)
 
