@@ -1,4 +1,6 @@
 # ReDimNet
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/reshape-dimensions-network-for-speaker-1/speaker-verification-on-voxceleb)](https://paperswithcode.com/sota/speaker-verification-on-voxceleb?p=reshape-dimensions-network-for-speaker-1)
+
 
 This is an official implementation of a neural network architecture presented in the paper [Reshape Dimensions Network for Speaker Recognition](https://arxiv.org/pdf/2407.18223).
 
@@ -42,7 +44,7 @@ For full list of pretrained models, please refer to [evaluation](EVALUATION.md)
 
 ## Citation
 
-If you find this work or code is helpful in your research, please cite (will be updated after Interspeech 2024 publication):
+If you find our work helpful and you used this code in your research, please cite:
 ```
 @inproceedings{yakovlev24_interspeech,
   title     = {Reshape Dimensions Network for Speaker Recognition},
@@ -56,5 +58,6 @@ If you find this work or code is helpful in your research, please cite (will be 
 
 ## Acknowledgements
 
-For training model we used [wespeaker](https://github.com/wenet-e2e/wespeaker/tree/master) pipeline. 
-We ported some layers from [transformers](https://github.com/huggingface/transformers).
+For model training we used [wespeaker](https://github.com/wenet-e2e/wespeaker/tree/master) pipeline.
+
+Some of the layers we ported from [transformers](https://github.com/huggingface/transformers).
